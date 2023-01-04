@@ -5,45 +5,45 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
-@Entity 
+@Entity
 public class Todo {
 
-  @Id
-  @GeneratedValue
-  private Integer id;
+    @Id
+    @GeneratedValue
+    private Integer id;
 
-  private boolean done = false;
+    private boolean done = false;
 
-  @NotBlank 
-  private String task;
+    @NotBlank
+    private String task;
 
-  public Todo() {}
+    public Todo() {}
 
-  public Todo(String task) {
-    this.task = task;
-  }
+    public Todo(String task) {
+        this.task = task;
+    }
 
-  public Integer getId() {
-    return id;
-  }
+    public Integer getId() {
+        return id;
+    }
 
-  public void setId(Integer id) { 
-    this.id = id;
-  }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-  public boolean isDone() {
-    return done;
-  }
+    public boolean isDone() {
+        return done;
+    }
 
-  public void setDone(boolean done) {
-    this.done = done;
-  }
+    public void setDone(boolean done) {
+        this.done = done;
+    }
 
-  public String getTask() {
-    return task;
-  }
+    public String getTask() {
+        return task;
+    }
 
-  public void setTask(String task) {
-    this.task = task;
-  }
+    public void setTask(String task) {
+        this.task = task;
+    }
 }
